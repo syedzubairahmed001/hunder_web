@@ -1,0 +1,132 @@
+.container_var__1 {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0085d9;
+}
+.twitterIcon{
+  font-size: 30px;
+}
+
+.tweetContainer_var__1 {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: #0085d9;
+  -webkit-box-shadow: 20px 20px 28px #007ece, -20px -20px 28px #008ce4;
+  box-shadow: 20px 20px 28px #007ece, -20px -20px 28px #008ce4;
+  min-width: 600px;
+  /* height: 400px; */
+  margin: 100px;
+}
+
+.profilePic_var__1 {
+  background: linear-gradient(145deg, #008ee8, #0078c3);
+  box-shadow: 5px 5px 31px #0079c5, -5px -5px 31px #0091ed;
+}
+
+.container_var__2 {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff7979;
+}
+
+.tweetContainer_var__2 {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: #ff7979;
+box-shadow:  25px 25px 51px #d96767,
+             -25px -25px 51px #ff8b8b;
+
+  min-width: 600px;
+  /* height: 400px; */
+  margin: 100px;
+}
+
+.profilePic_var__2 {
+  background: linear-gradient(145deg, #008ee8, #0078c3);
+  background: #ff7979;
+box-shadow:  25px 25px 51px #d96767,
+             -25px -25px 51px #ff8b8b;
+}
+
+.container_var__3 {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8c7ae6;
+}
+
+.tweetContainer_var__3 {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: #8c7ae6;
+  box-shadow: 25px 25px 51px #7768c4, -25px -25px 51px #a18cff;
+
+  min-width: 600px;
+  /* height: 400px; */
+  margin: 100px;
+}
+
+.profilePic_var__3 {
+  background: linear-gradient(145deg, #008ee8, #0078c3);
+  box-shadow: 25px 25px 51px #7768c4, -25px -25px 51px #a18cff;
+}
+
+.container_var__4 {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2ed573;
+}
+
+.tweetContainer_var__4 {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: #2ed573;
+  box-shadow: 25px 25px 51px #27b562, -25px -25px 51px #35f584;
+
+  min-width: 600px;
+  /* height: 400px; */
+  margin: 100px;
+}
+
+.profilePic_var__4 {
+  background: linear-gradient(145deg, #008ee8, #0078c3);
+  background: #2ed573;
+  box-shadow: 25px 25px 51px #27b562, -25px -25px 51px #35f584;
+}
+
+.container_var__5 {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6e6e6;
+}
+
+.tweetContainer_var__5 {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: #e6e6e6;
+  box-shadow: 25px 25px 51px #c4c4c4, -25px -25px 51px #ffffff;
+
+  min-width: 600px;
+  /* height: 400px; */
+  margin: 100px;
+}
+
+.profilePic_var__5 {
+  background: linear-gradient(145deg, #008ee8, #0078c3);
+  background: #e6e6e6;
+  box-shadow: 25px 25px 51px #c4c4c4, -25px -25px 51px #ffffff;
+}

@@ -1,0 +1,15 @@
+.container {
+  background: linear-gradient(145deg, #252a2c, #202325);
+  box-shadow: 3px 3px 7px #191c1e, -3px -3px 7px #2d3234;
+
+  /* padding: 10px; */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container:active {
+  background: linear-gradient(145deg, #202325, #252a2c);
+  box-shadow: 4px 4px 8px #191c1e, -4px -4px 8px #2d3234;
+}

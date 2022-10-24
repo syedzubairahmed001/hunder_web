@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.colorButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.colorButton:active {
+  transform: scale(1.05) translateY(-10px);
+}
+/* .colorButton:hover{
+    transform: scale(1.05);
+} */
+
+.colorButton_blue {
+  background-color: #0085d9;
+}
+.colorButton_pink {
+  background-color: #ff7979;
+}
+.colorButton_green {
+  background-color: #2ed573;
+}
+.colorButton_purple {
+  background-color: #8c7ae6;
+}
+.colorButton_white {
+  background-color: #e6e6e6;
+}
+
+.button {
+  background: #252a2c;
+box-shadow:  5px 5px 7px #1b1f20,
+             -5px -5px 7px #2f3538;
+
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.button:active {
+  background: linear-gradient(145deg, #202325, #252a2c);
+  box-shadow: 4px 4px 8px #191c1e, -4px -4px 8px #2d3234;
+}
