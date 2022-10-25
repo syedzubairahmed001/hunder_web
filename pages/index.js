@@ -84,7 +84,7 @@ const CustomAppBar = () => {
         <Toolbar disableGutters style={{ background: "transparent" }}>
           <Box display="flex" alignItems="center" width="100%">
             <Box mr={0} p={2}>
-              <img src="/Hunder_logo.png" style={{ width: "55px" }} />
+              <img src="/hunder_logo.png" style={{ width: "55px" }} />
             </Box>
 
             <Box
