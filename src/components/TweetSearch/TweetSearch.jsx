@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Search } from "@mui/icons-material";
 import { InputBase, InputAdornment, Box, Typography } from "@mui/material";
 
-import { withGlobalContext } from "../../context/Global.context";
+import { WithGlobalContext } from "../../context/Global.context";
 
 import styles from "./TweetSearch.module.css";
 
@@ -121,4 +121,4 @@ function validURL(str) {
 }
 
 
-export default withGlobalContext(TweetSearch);
+export default WithGlobalContext(TweetSearch);

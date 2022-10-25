@@ -50,17 +50,7 @@ export default function Home() {
         <Head>
           <title>Hunder | Screenshot tweets like a pro</title>
           <link rel="icon" href="/favicon.ico" />
-          <Script>
-            {`
-              var ffWidgetId = '498c84a8-c1c1-4e97-9d5f-4fc0e54381c3';
-              var ffWidgetScript  = document.createElement('script');
-              ffWidgetScript.type = 'text/javascript';
-              console.log("test");
-              ffWidgetScript.src = 'https://freddyfeedback.com/widget/freddyfeedback.js';
-              document.head.appendChild(ffWidgetScript);
-
-            `}
-          </Script>
+          
         </Head>
         <CustomAppBar />
 

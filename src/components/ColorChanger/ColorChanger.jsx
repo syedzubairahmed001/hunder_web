@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { Box, Button } from "@mui/material";
 import { CalendarToday, FavoriteBorder, Download } from "@mui/icons-material";
-import { withGlobalContext } from "../../context/Global.context";
+import { WithGlobalContext } from "../../context/Global.context";
 import THEME_COLORS from "../../constants/themeColor";
 
 import styles from "./ColorChanger.module.css";
@@ -123,4 +123,4 @@ const ButtonWrap = (props) => {
   );
 };
 
-export default withGlobalContext(ColorChanger);
+export default WithGlobalContext(ColorChanger);

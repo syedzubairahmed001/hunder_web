@@ -20,7 +20,7 @@ const GlobalProvider = ({ children }) => {
   });
   const [tweetInteractionDisplay, setTweetInteractionDisplay] = useState(true);
   const [tweetDateDisplay, setTweetDateDisplay] = useState(true);
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
 
   const [tweetDownload, setTweetDownload] = useState({ func: () => {} });
 
@@ -29,8 +29,8 @@ const GlobalProvider = ({ children }) => {
   };
 
   const triggerDownloadTweet = () => {
-    tweetDownload.func()
-  }
+    tweetDownload.func();
+  };
 
   const changeTweetInteraction = (boolVal) => {
     setTweetInteractionDisplay(boolVal);
@@ -82,15 +82,16 @@ const GlobalProvider = ({ children }) => {
         registerTweetDownloadFunction,
         triggerDownloadTweet,
         isLoading,
-        setIsLoading
+        setIsLoading,
       }}
     >
       {children}
     </GlobalContext.Provider>
   );
 };
+GlobalProvider.displayName = "GlobalProvider";
 
-const withGlobalContext = (Child) => (props) =>
+const WithGlobalContext = (Child) => (props) =>
   (
     <GlobalContext.Consumer>
       {(context) => <Child {...props} context={context} />}
@@ -98,4 +99,6 @@ const withGlobalContext = (Child) => (props) =>
     </GlobalContext.Consumer>
   );
 
-export { GlobalProvider, withGlobalContext };
+WithGlobalContext.displayName = "WithGlobalContext";
+
+export { GlobalProvider, WithGlobalContext };

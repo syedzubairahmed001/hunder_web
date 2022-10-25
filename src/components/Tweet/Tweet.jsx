@@ -12,7 +12,7 @@ import { Box, Avatar, Typography } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 import THEME_COLORS from "../../constants/themeColor";
-import { withGlobalContext } from "../../context/Global.context";
+import { WithGlobalContext } from "../../context/Global.context";
 
 import styles from "./Tweet.module.css";
 
@@ -238,4 +238,4 @@ function intToString(value) {
   
 }
 
-export default withGlobalContext(Tweet);
+export default WithGlobalContext(Tweet);
