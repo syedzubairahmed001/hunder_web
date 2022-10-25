@@ -23,10 +23,12 @@ export default function MyApp(props) {
     <>
       <Script
         strategy="lazyOnload"
+		id="my-script-1"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script strategy="lazyOnload" id="my-script-2">
+		  
         {`
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
