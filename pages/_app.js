@@ -7,6 +7,8 @@ import { CacheProvider } from "@emotion/react";
 import theme from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
 
+import Script from 'next/script';
+
 import "../styles/globals.css";
 
 // Client-side cache shared for the whole session
