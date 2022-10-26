@@ -22,14 +22,15 @@ const TweetSearch = (props) => {
           e.preventDefault();
           setIsLoading(true);
 
-          if(!validURL(searchValue)){
+          if (!validURL(searchValue)) {
             setError("Please enter a valid tweet URL");
             setIsLoading(false);
             return;
           }
 
-          let tweetId = searchValue.split('/');
-          tweetId = tweetId[tweetId.length-1];
+          let tweetId = searchValue.split("/");
+          tweetId = tweetId[tweetId.length - 1];
+          tweetId = tweetId.split("?")[0];
 
           const response = await fetch("/api/tweet", {
             method: "POST",
@@ -40,8 +41,8 @@ const TweetSearch = (props) => {
           setIsLoading(false);
           const dataJson = await response.json();
           console.log(dataJson);
-          if(!dataJson || !dataJson.data){
-            setError("Please enter a valid Tweet URL")
+          if (!dataJson || !dataJson.data) {
+            setError("Please enter a valid Tweet URL");
           }
           if (dataJson && dataJson.data) {
             const tweetData = dataJson.data;
@@ -92,7 +93,7 @@ const TweetSearch = (props) => {
           onChange={(e) => {
             setError(false);
             const val = e.target.value;
-            
+
             setSearchValue(val);
           }}
           onSubmit={async () => {
@@ -111,14 +112,16 @@ const TweetSearch = (props) => {
 };
 
 function validURL(str) {
-  var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-    '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+  var pattern = new RegExp(
+    "^(https?:\\/\\/)?" + // protocol
+      "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
+      "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
+      "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
+      "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
+      "(\\#[-a-z\\d_]*)?$",
+    "i"
+  ); // fragment locator
   return !!pattern.test(str);
 }
-
 
 export default WithGlobalContext(TweetSearch);

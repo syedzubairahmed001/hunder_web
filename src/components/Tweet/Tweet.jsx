@@ -156,7 +156,7 @@ const Tweet = (props) => {
             </Typography>
           </Box>
           {tweetDateDisplay && (
-            <Box mt={2}>
+            <Box mt={2} >
               <Typography
                 style={dynamicStyles[presentTheme].tertioryColorStyles}
                 variant="subtitle1"
@@ -170,10 +170,9 @@ const Tweet = (props) => {
                   }
                 )}
               </Typography>
-            </Box>
-          )}
+            </Box> )} 
           {tweetInteractionDisplay && (
-            <Box mt={2} display="flex">
+            <Box mt={1} display="flex">
               <Box display="flex">
                 <Typography
                   style={dynamicStyles[presentTheme].primaryTextStyles}

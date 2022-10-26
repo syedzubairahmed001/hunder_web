@@ -21,7 +21,7 @@
 } */
 
 .colorButton_blue {
-  background-color: #0085d9;
+  background-color: #0078c3;
 }
 .colorButton_pink {
   background-color: #ff7979;
@@ -38,14 +38,22 @@
 
 .button {
   background: #252a2c;
-box-shadow:  5px 5px 7px #1b1f20,
-             -5px -5px 7px #2f3538;
+  box-shadow: 5px 5px 7px #1b1f20, -5px -5px 7px #2f3538;
 
   border-radius: 40px;
   cursor: pointer;
 }
 
 .button:active {
-  background: linear-gradient(145deg, #202325, #252a2c);
-  box-shadow: 4px 4px 8px #191c1e, -4px -4px 8px #2d3234;
+  background: linear-gradient(145deg, #252a2c, #202325);
+box-shadow:  6px 6px 13px #141617,
+             -6px -6px 13px #32383b;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
 }

@@ -15,50 +15,52 @@ const ColorChanger = (props) => {
     changeTweetInteraction,
     tweetInteractionDisplay,
     tweetDateDisplay,
-    triggerDownloadTweet
+    triggerDownloadTweet,
   } = context || {};
   return (
-    <div className={styles.container}>
-      <Box mr={1} display="inline-block">
-        <button
-          onClick={() => {
-            changeTweetTheme(THEME_COLORS.blue);
-          }}
-          className={`${styles.colorButton} ${styles.colorButton_blue}`}
-        ></button>
-      </Box>
-      <Box mr={1} display="inline-block">
-        <button
-          onClick={() => {
-            changeTweetTheme(THEME_COLORS.pink);
-          }}
-          className={`${styles.colorButton} ${styles.colorButton_pink}`}
-        ></button>
-      </Box>
+    <Box className={styles.container}>
+      <Box display="flex" flexDirection="row">
+        <Box mr={1} display="inline-block">
+          <button
+            onClick={() => {
+              changeTweetTheme(THEME_COLORS.blue);
+            }}
+            className={`${styles.colorButton} ${styles.colorButton_blue}`}
+          ></button>
+        </Box>
+        <Box mr={1} display="inline-block">
+          <button
+            onClick={() => {
+              changeTweetTheme(THEME_COLORS.pink);
+            }}
+            className={`${styles.colorButton} ${styles.colorButton_pink}`}
+          ></button>
+        </Box>
 
-      <Box mr={1} display="inline-block">
-        <button
-          onClick={() => {
-            changeTweetTheme(THEME_COLORS.green);
-          }}
-          className={`${styles.colorButton} ${styles.colorButton_green}`}
-        ></button>
-      </Box>
-      <Box mr={1} display="inline-block">
-        <button
-          onClick={() => {
-            changeTweetTheme(THEME_COLORS.purple);
-          }}
-          className={`${styles.colorButton} ${styles.colorButton_purple}`}
-        ></button>
-      </Box>
-      <Box mr={1} display="inline-block">
-        <button
-          onClick={() => {
-            changeTweetTheme(THEME_COLORS.white);
-          }}
-          className={`${styles.colorButton} ${styles.colorButton_white}`}
-        ></button>
+        <Box mr={1} display="inline-block">
+          <button
+            onClick={() => {
+              changeTweetTheme(THEME_COLORS.green);
+            }}
+            className={`${styles.colorButton} ${styles.colorButton_green}`}
+          ></button>
+        </Box>
+        <Box mr={1} display="inline-block">
+          <button
+            onClick={() => {
+              changeTweetTheme(THEME_COLORS.purple);
+            }}
+            className={`${styles.colorButton} ${styles.colorButton_purple}`}
+          ></button>
+        </Box>
+        <Box mr={1} display="inline-block">
+          <button
+            onClick={() => {
+              changeTweetTheme(THEME_COLORS.white);
+            }}
+            className={`${styles.colorButton} ${styles.colorButton_white}`}
+          ></button>
+        </Box>
       </Box>
       <OtherControls
         changeTweetDate={changeTweetDate}
@@ -67,7 +69,7 @@ const ColorChanger = (props) => {
         tweetDateDisplay={tweetDateDisplay}
         triggerDownloadTweet={triggerDownloadTweet}
       />
-    </div>
+    </Box>
   );
 };
 
@@ -77,10 +79,10 @@ const OtherControls = (props) => {
     changeTweetInteraction,
     tweetInteractionDisplay,
     tweetDateDisplay,
-    triggerDownloadTweet
+    triggerDownloadTweet,
   } = props || {};
   return (
-    <Box display="flex" ml={3}>
+    <Box display="flex" ml={3} flexDirection="row" alignItems="center" justifyContent="center" mt={1}>
       <ButtonWrap
         onClick={() => {
           changeTweetDate(!tweetDateDisplay);

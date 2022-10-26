@@ -32,3 +32,8 @@ a {
     background: black;
   }
 } */
+
+
+.v-hidden{
+  visibility: hidden;
+}
