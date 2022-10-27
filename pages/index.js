@@ -48,7 +48,7 @@ export default function Home() {
     <GlobalProvider>
       <div className={styles.container}>
         <Head>
-          <title>Hunder | Screenshot tweets like a pro</title>
+          <title>Hunder | Convert tweets to beautiful images</title>
           <link rel="icon" href="/favicon.ico" />
           
         </Head>
@@ -68,6 +68,7 @@ export default function Home() {
           <Box mt={1}>
             <ColorChanger />
           </Box>
+          <Footer />
         </main>
       </div>
     </GlobalProvider>
@@ -102,3 +103,19 @@ const CustomAppBar = () => {
   );
 };
 
+
+const Footer = () => {
+  return <footer>
+    <Box display="flex" alignItems="center" justifyContent="center" mt={2} mb={1}>
+      <Typography color="lightgrey">
+        You can find me on Twitter: 
+      </Typography>
+      {" "}
+      <Box ml={1}>
+      <Typography color="Background">
+        <a rel="noopener noreferer" href="https://twitter.com/zubairself" target="_blank"> @zubairself</a>
+      </Typography>
+      </Box>
+    </Box>
+  </footer>
+}
