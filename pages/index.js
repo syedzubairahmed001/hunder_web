@@ -113,7 +113,7 @@ const Footer = () => {
       {" "}
       <Box ml={1}>
       <Typography color="Background">
-        <a rel="noopener noreferer" href="https://twitter.com/zubairself" target="_blank"> @zubairself</a>
+        <a rel="noreferrer nopener" href="https://twitter.com/zubairself" target="_blank"> @zubairself</a>
       </Typography>
       </Box>
     </Box>
