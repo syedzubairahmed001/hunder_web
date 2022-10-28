@@ -41,6 +41,7 @@ export default function MyApp(props) {
 
       <CacheProvider value={emotionCache}>
         <Head>
+		<meta name="google-site-verification" content="VaA0Lhdvn2wDtHRrlcUz8iEZb0WkTifHZZivu53Vxfo" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <ThemeProvider theme={theme}>
