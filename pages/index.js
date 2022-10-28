@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import {NextSeo} from 'next-seo';
+
 import Head from "next/head";
 import Script from "next/script";
 import styles from "../styles/Home.module.css";
@@ -45,6 +47,40 @@ export default function Home() {
   }, []);
 
   return (
+    <>
+    <NextSeo
+      title="Hunder - Convert tweets to beautiful images without using any design tool"
+      description="Hunder allows you to convert tweets to beautiful images without using any design tool, in less than 5 seconds. - Copy link to the tweet - Paste it in Hunder search - Choose a color - And lastly download your image! it's that simple!"
+      canonical="https://www.hunder.xyz/"
+      openGraph={{
+        url: 'https://www.hunder.xyz',
+        title: 'Hunder - Convert tweets to beautiful images without using any design tool',
+        description: 'Open Graph Description',
+        images: [
+          {
+            url: 'https://www.hunder.xyz/hunder_og_image_01.jpeg',
+            width: 800,
+            height: 600,
+            alt: 'Og Image Alt',
+            type: 'image/jpeg',
+          },
+          {
+            url: 'https://www.hunder.xyz/hunder_og_image_02.jpeg',
+            width: 900,
+            height: 800,
+            alt: 'Og Image Alt Second',
+            type: 'image/jpeg',
+          },
+        ],
+        siteName: 'Hunder',
+      }}
+      twitter={{
+        handle: '@zubairself',
+        site: '@zubairself',
+        cardType: 'summary_large_image',
+      }}
+    />
+    
     <GlobalProvider>
       <div className={styles.container}>
         <Head>
@@ -72,6 +108,7 @@ export default function Home() {
         </main>
       </div>
     </GlobalProvider>
+    </>
   );
 }
 
@@ -100,6 +137,7 @@ const CustomAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
+    
   );
 };
 
