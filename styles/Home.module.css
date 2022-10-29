@@ -3,13 +3,19 @@
 } */
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.tweetContainer{
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
@@ -104,8 +110,8 @@
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  height: 55px;
+  /* margin-left: 0.5rem; */
 }
 
 @media (max-width: 600px) {
@@ -113,17 +119,18 @@
     width: 100%;
     flex-direction: column;
   }
+  .main{
+    align-items: start;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+
+@media only screen and (max-width: 600px) {
+  .logo{
+    width: 35px;
+    height: 35px;
   }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
+  .tweetContainer{
+    display: block;
   }
 }

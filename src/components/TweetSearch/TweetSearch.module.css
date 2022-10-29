@@ -7,9 +7,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 500px;
+  height: 50px;
 }
 
 .container:active {
   background: linear-gradient(145deg, #202325, #252a2c);
   box-shadow: 4px 4px 8px #191c1e, -4px -4px 8px #2d3234;
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    width: 300px;
+    height: 40px;
+  }
 }

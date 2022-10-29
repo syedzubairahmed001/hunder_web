@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   background: #0078c3;
+  overflow-x: auto;
 }
 .twitterIcon{
   font-size: 30px;

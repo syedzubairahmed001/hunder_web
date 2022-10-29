@@ -15,7 +15,6 @@ const TweetSearch = (props) => {
   return (
     <Box display="flex" flexDirection="column" alignItems="center">
       <form
-        style={{ width: "400px", height: "50px" }}
         className={styles.container}
         onSubmit={async (e) => {
           setError(false);

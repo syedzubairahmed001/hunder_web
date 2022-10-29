@@ -8,7 +8,7 @@ const GlobalProvider = ({ children }) => {
   const [tweetTheme, setTweetTheme] = useState("blue");
   const [tweetContent, setTweetContent] = useState({
     text: "Hey 👋🏻 copy link to a tweet and paste it in the search box above, to capture a beautiful image! 😍",
-    profilePicture: "http://localhost:3000/profile_image.png",
+    profilePicture: "http://www.hunder.xyz/profile_image.png",
     profileName: "Zubair Ahmed",
     profileUserName: "zubairself",
     tweetCreatedAt: "Mon Oct 24 2022 19:02:10 GMT+0530 (India Standard Time)",
